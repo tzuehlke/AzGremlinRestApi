@@ -15,17 +15,6 @@ using System.Net;
 using System.Text;
 
 
-/* hint 1: call this function
-Call with POST and as body {query:"g.V().limit(3)"}
-*/
-
-/* hint 2: how to use gremlin console
-start console:              ./gremlin.sh
-connect to Azure DB:        :remote connect tinkerpop.server conf/remote-secure.yaml
-send query:                 :> g.V()
-exit console:               :exit
-*/
-
 namespace Company.Function
 {
     public static class gremgraphapi
@@ -36,7 +25,7 @@ namespace Company.Function
         private static string database = Environment.GetEnvironmentVariable("GRAPHDBNAME");
         private static string collection = Environment.GetEnvironmentVariable("GRAPHDBCOLL");
 
-        [FunctionName("mgGremlinGraph")]
+        [FunctionName("gremlinquery")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log)

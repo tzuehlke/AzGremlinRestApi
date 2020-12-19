@@ -29,7 +29,7 @@
 
 hosts: [<COSMOSDBACCOUNT>.gremlin.cosmos.azure.com]
 port: 443
-username: /dbs/<COSMOSDBACCOUNT>/colls/<GRAPHCOLLECTION>
+username: /dbs/<COSMOSDB>/colls/<GRAPHCOLLECTION>
 password: <KEY>
 connectionPool: {
   enableSsl: true,
