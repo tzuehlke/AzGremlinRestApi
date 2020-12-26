@@ -1,5 +1,6 @@
 # AzGremlinRestApi
 Provide simple REST API as Azure Function for Gremlin Cosmos DB in a [Remote-Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) (VSCode extension)
+![gremlin-overview](https://user-images.githubusercontent.com/32843441/103159777-d86fb780-47cd-11eb-9952-ea0242e0ab9d.png)
 
 # Configuration
 ## Azure Function
@@ -27,7 +28,7 @@ password: <KEY>
 calling as POST request with body:
 ```JSON
 {
-    query: "g.V().limit(3)"
+    "query": "g.V().limit(3)"
 }
 ```
 
